@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Department Grid</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery Mobile CDN -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <style>
+    .ui-grid-b .ui-block-a,
+    .ui-grid-b .ui-block-b,
+    .ui-grid-b .ui-block-c,
+    .ui-grid-b .ui-block-d,
+    .ui-grid-b .ui-block-e {
+      width: 20%;
+    }
+
+    .custom-btn {
+      background-color: #2196F3 !important;
+      color: white !important;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    .custom-btn:hover {
+      background-color: #0b7dda !important;
+    }
+
+    /* Responsive: Stack buttons vertically on narrow screens */
+    @media (max-width: 600px) {
+      .ui-grid-b .ui-block-a,
+      .ui-grid-b .ui-block-b,
+      .ui-grid-b .ui-block-c,
+      .ui-grid-b .ui-block-d,
+      .ui-grid-b .ui-block-e {
+        width: 100% !important;
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Main Page -->
+<div data-role="page" id="main">
+  <div data-role="header">
+    <h1>Departments</h1>
+  </div>
+  <div data-role="content" class="ui-grid-b">
+    <div class="ui-block-a"><a href="#it" class="ui-btn custom-btn">IT</a></div>
+    <div class="ui-block-b"><a href="#comp" class="ui-btn custom-btn">COMP</a></div>
+    <div class="ui-block-c"><a href="#etc" class="ui-btn custom-btn">ETC</a></div>
+    <div class="ui-block-d"><a href="#mech" class="ui-btn custom-btn">MECH</a></div>
+    <div class="ui-block-e"><a href="#elect" class="ui-btn custom-btn">ELECT</a></div>
+  </div>
+</div>
+
+<!-- IT Page -->
+<div data-role="page" id="it">
+  <div data-role="header"><h1>IT Department</h1></div>
+  <div data-role="content">
+    <p>Information Technology focuses on computer systems, software, and networks.</p>
+    <a href="#main" class="ui-btn custom-btn">Back</a>
+  </div>
+</div>
+
+<!-- COMP Page -->
+<div data-role="page" id="comp">
+  <div data-role="header"><h1>Computer Department</h1></div>
+  <div data-role="content">
+    <p>Computer Engineering deals with software development and computer systems design.</p>
+    <a href="#main" class="ui-btn custom-btn">Back</a>
+  </div>
+</div>
+
+<!-- ETC Page -->
+<div data-role="page" id="etc">
+  <div data-role="header"><h1>ETC Department</h1></div>
+  <div data-role="content">
+    <p>Electronics and Telecommunication focuses on communication systems and embedded electronics.</p>
+    <a href="#main" class="ui-btn custom-btn">Back</a>
+  </div>
+</div>
+
+<!-- MECH Page -->
+<div data-role="page" id="mech">
+  <div data-role="header"><h1>Mechanical Department</h1></div>
+  <div data-role="content">
+    <p>Mechanical Engineering involves machines, manufacturing, and thermodynamics.</p>
+    <a href="#main" class="ui-btn custom-btn">Back</a>
+  </div>
+</div>
+
+<!-- ELECT Page -->
+<div data-role="page" id="elect">
+  <div data-role="header"><h1>Electrical Department</h1></div>
+  <div data-role="content">
+    <p>Electrical Engineering covers circuits, power systems, and electronics.</p>
+    <a href="#main" class="ui-btn custom-btn">Back</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+
